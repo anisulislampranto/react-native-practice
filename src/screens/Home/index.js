@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, ImageBackground, Pressable} from 'react-native';
+import Feather from 'react-native-vector-icons/Feather';
 
 export default function HomeScreen() {
   return (
@@ -7,7 +8,8 @@ export default function HomeScreen() {
       <Pressable
         className="bg-white rounded-full flex flex-row items-center justify-center ml-6 h-14 absolute top-8 z-10 w-[90%]"
         onPress={() => console.warn('exploring')}>
-        <Text className="text-center font-bold">Where are you going ?</Text>
+        <Feather name="search" size={20} color="#900" />
+        <Text className="text-center font-bold ml-3">Where are you going</Text>
       </Pressable>
       <ImageBackground
         className="w-full h-[500px] object-cover flex justify-center"
